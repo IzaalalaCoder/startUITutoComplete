@@ -58,6 +58,7 @@ import { useRtl } from '@/hooks/useRtl';
 import { trpc } from '@/lib/trpc/client';
 
 import buildInfo from '../../../scripts/.build-info.json';
+import { ROUTES_PROJECTS } from '../projects/routes';
 
 const AdminNavBarMainMenu = ({ ...rest }: StackProps) => {
   const { t } = useTranslation(['admin']);
@@ -68,6 +69,9 @@ const AdminNavBarMainMenu = ({ ...rest }: StackProps) => {
       </AdminNavBarMainMenuItem>
       <AdminNavBarMainMenuItem href={ROUTES_REPOSITORIES.admin.root()}>
         {t('admin:layout.mainMenu.repositories')}
+      </AdminNavBarMainMenuItem>
+      <AdminNavBarMainMenuItem href={ROUTES_PROJECTS.admin.root()}>
+        Projects
       </AdminNavBarMainMenuItem>
       <AdminNavBarMainMenuItem href={ROUTES_MANAGEMENT.admin.root()}>
         {t('admin:layout.mainMenu.management')}

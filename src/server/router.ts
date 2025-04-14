@@ -5,6 +5,8 @@ import { oauthRouter } from '@/server/routers/oauth';
 import { repositoriesRouter } from '@/server/routers/repositories';
 import { usersRouter } from '@/server/routers/users';
 
+import { projectsRouter } from './routers/projects';
+
 /**
  * This is the primary router for your server.
  *
@@ -14,6 +16,7 @@ export const appRouter = createTRPCRouter({
   account: accountRouter,
   auth: authRouter,
   oauth: oauthRouter,
+  projects: projectsRouter,
   repositories: repositoriesRouter,
   users: usersRouter,
 });
