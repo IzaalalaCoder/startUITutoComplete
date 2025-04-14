@@ -12,7 +12,6 @@ import Link from 'next/link';
 import { useParams, useRouter } from 'next/navigation';
 import { LuPenLine, LuTrash2 } from 'react-icons/lu';
 
-import { ConfirmText } from '@/components/ConfirmMenuItem/docs.stories';
 import { ConfirmModal } from '@/components/ConfirmModal';
 import { ErrorPage } from '@/components/ErrorPage';
 import { LoaderFull } from '@/components/LoaderFull';
